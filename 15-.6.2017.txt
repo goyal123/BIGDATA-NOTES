@@ -1,0 +1,77 @@
+*************linux :servers*************************************
+
+*every port can be used by only one programs.
+*one program can hve multiple port numbers.
+
+
+
+**1.configuration file of web server :vim /etc/httpd/conf/httpd.conf and go to line no. 42
+  2. then systemctl restart httpd
+  3. netstat tnlp | grep httpd
+
+
+commands:
+
+getenforce : to see the status of  selinux security
+setenforce 0 : it will get permissive and disable the security.
+
+
+
+
+
+
+
+
+
+
+
+
+
+************************python*********************************************************************
+
+*the major difference between for and while loop is that for loop allows initialisation but while loop checks only true and false condition.
+**i=1;
+for("print hi",i>=10;i++)
+{                                                 output : hi
+print "hi"
+} 
+
+*for loop is used in python when we need to do iteration
+*pass keyword is use to bypass the execution ti further statement
+*  def lw() is used to create  a function
+*  def lw(*x) to make the variable x is a tuple
+* in python function is somewhT LIKE  VARIABLE	
+
+
+
+
+
+
+
+
+     input                                              output
+>>x=5,6, "hi"
+>>x                                                      (5 ,6 ,hi)
+>>type(x)                                                 tuple(immutable coz it is read only)
+
+>>x= [5,66,45]
+>>x                                                     [5,6,45]
+>>type(X)                                                list(mutable coz it is read and write both)
+
+>>z={'name':'prakhar' , 'age':44}
+>>type(z)                                                dict
+>>z['name']                                              prakhar
+
+
+
+
+
+
+
+
+
+**********hadoop*****************************************************************
+
+commands
+
+hadoop -fs rm [filename] : to delete a file

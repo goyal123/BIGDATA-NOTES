@@ -1,0 +1,68 @@
+LINUX
+
+*****
+hack - 1)rd.break enforcing=0
+       2)ctrl +x
+       3)mount -o remount,rw    /sysroot/
+       4)chroot /sysroot/ 
+       5) passwd root 
+       6)restorecon /etc/shadow
+*"which is not a command but it is a shell function.
+* 1 GiB  = 1024 MiB
+* 1 GB =1000 MB .
+
+**in hard disk ,sectors(spaces) are taken from it
+1 sector = 512 bytes
+** hard disk allows normally maximum only 4 partitions,
+
+ 
+ 
+
+
+vim editor
+----------
+
+1) i- enter into insert mode
+2)esc - exit from the insert mode
+3)wq- save and exit (from command mode)
+4)q-exit
+5)q! : force quit
+
+
+commands::
+
+hostnamectl set-hostname system2 : to change the name of system as in the network.
+mv [oldname] [newname] : to rename the file
+df : to see the partitions of linux
+df -h : in readable form
+fdisk -l : tells how many hard disks are attached to the system.
+fdisk /dev/sdb : to go inside the harddisk
+lsblk : for block devices
+mkfs.ext4   /dev/sdb1  :formatting a partition in ext4 format
+mount /dev/sdb1  /data : mounting the partition to /data folder
+umount /dev/sdb1 : unmounting ( first get out of the mounted directory.
+
+
+
+
+
+bigdata
+******
+
+(master)
+1) go to hadoop directory
+2) open gedit hdfs-site.xml
+3) write the property in xml
+
+**3 conditions for sending a data 
+1)ip of the dest
+2)protocol used
+3)port number
+
+**steps for starting hadoop
+1)cd /etc/hadoop
+2)hadoop-daemon.sh start namenode
+3)hadoop dfsadmin -report
+
+hadoop-daemon.sh start namenode(for master)
+hadoop-daemon.sh start datanode(for slave)

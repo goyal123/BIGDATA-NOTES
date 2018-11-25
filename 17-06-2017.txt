@@ -1,0 +1,26 @@
+****************************linux*****************************
+
+alias : to make an alias
+unalias : to remove an alias
+
+forman : a deployemnt server
+cd /proc : proc is a folder contains all the process ids
+
+
+
+
+
+
+
+
+
+************python*****************************
+
+*all programs are single threaded
+
+
+**************hadoop*********************************************
+
+
+*map reduce
+

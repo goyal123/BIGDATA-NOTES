@@ -1,0 +1,20 @@
+**********************LINUX***************************************************************
+command
+---------
+
+ssh [destination ip ] [any commands] : to run a command to destination machine without a password
+echo q | passwd prakhar --stdin : taking q as input and changing it directly to the account 
+gedit /root/.ssh/known_host :opens the public key file of all the ip's
+yum install [any program] -y : to install a program by automatically entering "y" when asked for yes/no
+sshpass -p [password] ssh -o stricthostkeychecking=no [dest ip] : logging into other machine without prompting for password
+
+
+gedit /etc/selinux/config : to get into selinux security main file and change the permision to "permisive"
+
+
+listen 1233
+<Directory /web>
+	Require all granted
+</Directory>
+
+Documentroot /web

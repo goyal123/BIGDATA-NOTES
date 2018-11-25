@@ -1,0 +1,50 @@
+******************hadoop********************
+
+
+*
+
+starting of jobtracker
+1.go to mapred-site.xml
+2. <property>
+<name>mapred.job.tracker</name>
+<value> masterip:9001</value>
+</property>
+hadoop-daemon.sh start jobtracker
+3) port number 50030
+
+
+starting of tasktracker
+
+1)cd /etc/hadoop
+2) mapred-site.xml
+3)<property>
+<name>mapred.job.tracker</name>
+<value> [mapreducemasterip:9001</value>
+</property>
+4.hadoop-daemon.sh start tasktracker
+
+hadoop jar /usr/share/hadoop/hadoop-examples-1.2.1.jar wordcount  /cric.txt  /output
+hadoop fs -ls /output
+hadop fs -cat
+
+
+
+
+***************************docker****************************************************
+
+
+commands
+
+systemctl restart docker: service start
+ 
+docker load -i [imagename] : to install the image
+
+docker ps : to see how many os are running
+
+docker run -it ubuntu:14.04 : running the os
+
+docker run -it -d ubuntu:14.04 : running the os simultaneously
+
+docker start [id] : to start the os
+
+docker attach [id] : to open the termonal of dockeros

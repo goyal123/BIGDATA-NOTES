@@ -1,0 +1,34 @@
+OS: linux : RHEL : redhat enterprise linux.
+
+Bare metal : installation/setup : installing os on real(physical) hardware.
+
+Virtualization : installing an os on a already installed os using an application. the os is called virtual machine or guest os	
+
+
+CMD prompt : 
+
+closing an app : use shortcut ctrl + c . 
+
+which command : it is used to tell the location(exact address) of any particular application .
+cd: change directory.
+pwd: address of the current directory.
+ls: list all the files of the current folder
+gedit[filename] : open a particular file
+gnome-terminal : command which is used to open the terminal
+ps : process information  
+ps -aux : displays all the list of processes.
+ps -aux | grep gnome-terminal : grep will search for the gnome-terminal
+kill [proces id] : to emd or terminate anything.
+
+
+
+SHELL: this retrieves the command , processes it and gives the output: BASH shell
+
+FOR syntax:  for((i=;i<=10;i++))
+do
+(command)
+done
+
+
+
+

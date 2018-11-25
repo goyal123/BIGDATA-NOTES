@@ -1,0 +1,53 @@
+linux
+
+
+*root account has all privileges
+*linux doesnt store file creation time but stores last modified time.
+lctrl+alt+(f1-f6) : to open 6 new screen(multiple cli) on linux.
+commands
+----------
+
+useradd [name]: to add a new user.
+userdel -r [name] : to delete a user.
+passwd [name]: to add a password.
+su - root : switch user 
+cal [yearnumber] : displaying the calendar.
+exit : to close the terminal
+ls -l : long list
+mkdir [folder name] : to creatte a folder.
+cd .. : to go back from  folder
+rm [filename] : to delete a file.
+touch : to create an empty file.
+cat > [filename] : to enter data in a file. and to finish writing press ctrl+d.
+cat >>[filename] : to append the data.
+w : to show how many user are connected/loggedin.
+startx -- :1     : to open a new gui .
+watch w : to show realtime data of w command(default refresh time  sec)
+
+
+
+
+
+
+
+PYTHON
+
+*the live interpreter in python is known as repl : read evaluate print loop.
+*in python "" and '' are the same and have the same function. this is callled interpolation.
+
+
+
+keywords---
+print "text " or  print 'text' : used for printing any string
+\n  : change line
+\t : tab space
+print r"this is\t sparta" : to display with "\t" as it is.
+type([variable]) : outputs the data type of variable.
+x="this is sprta". x[2] will give output i .
+x.lower() : convert everything to lower case
+x.upper() : convert everything to upper case
+
+**swapping : x=5
+           y=10
+           x,y = y,x
+

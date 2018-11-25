@@ -1,0 +1,27 @@
+LINUX :partitions
+*****
+
+*ping is a commands which runs in background with ICMP protocol
+*tcp:transmission control protocol.it is reliable as it is surity it will reach the destination and the receiver acknowledges after it  receives the packet.
+
+
+commands:
+
+tcpdump -i enp0s3 -n: to read the network packet and analyze it.(incoming and outgoing) 
+edit /etc/services/ : opens the file which comtains all the default port numbers of all programs.4
+init 0 : shutdown the system
+
+
+**steps for joining  2 harddisks or pendrives. lv:logical volume  vg :volume group
+1)make 2 partions and check that it is unmounted.
+2)pvdisplay /dev/sdc1
+3)pvcreate /dev/sdc1
+4) same 2 and 3 steps for second partition
+5)vgcreate vg1 /dev/sdc1 /dev/sdd1
+6)vgdisplay
+7)lvcreate --size [size] --name mylv1 vg1
+8) lvdisplay
+9)lvextend --size +1G /dev/vg1/mylv1  : to extend the size of partition.
+10)resize2fs /dev/vg1/mylv1  :for formattng without removing the data.  
+
+

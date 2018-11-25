@@ -1,0 +1,115 @@
+LINUX
+
+*****
+
+*there is a '/' folder in linux which is  a parentfolder. for eg /root/Desktop :this means desktop is in root folder and and root is in '/' folder.
+* kernel program which is preent in the os calls the driver of any hardware when it is attached to the system so that it can work.
+*HAL - HARDWARE ABSTRACTION LAYER: used for detecting external storage
+*USB port is technically also known as SCSI port
+commands
+--------
+fdisk -l : to check all the attached storage in the system
+bc : to open the calculator
+udevadm monitor : the signals which are coming through usb.it will captute that.
+mount /dev/sdb1  /media/eric  : to mount a partition to eric folder so that it shows as a drive on the desktop.because path consit 'media'.
+df -hT : to display the file formats of the partition
+blkid : complete details about the partitions.
+
+**steps for deleting a partition in pendrive
+1.fdisk
+2.insert pendrive
+3.fdisk
+4.fdisk -l /dev/sdb
+5.p:print
+6.df -h : to check if drive is mounted or not
+7 fdisk /dev/sdb
+8)d
+9)p
+10.)partprobe /dev/sdb ON ROOT :informs the kernel for partion table changes
+
+
+**steps for Creating a partition in pendrive
+1) create a partition in the pendrive
+2)load the driver in root using partprobe /dev/sdc1
+3)format using mkfs.ext4 /dev/sdc1
+4)mkdir  /media/test
+5) mount /dev/sdd1  /media/test
+6)e2label /dev/sdc1  new
+
+
+
+
+
+
+
+
+
+
+PYTHON
+******
+
+
+*in python3 everything is object/class, even a datatype.
+*in python2 print "hi" and in python3 print("hi")
+*no raw_input function in python. so input() is used to take the input
+*in python2 input() takes every input as a expression.whereas raw_input take everything as a string input.
+*in python3 input() takes every input as a string.
+
+
+
+keywords
+--------
+**eval("5+2") :it is used to calculate mathemaical calculations.
+**import sys
+sys.ps1("  ")   : to change the prompt name
+**import getpass
+getpass.getpass()
+
+
+
+
+
+
+
+code:: python3								code:python2
+------									-------------
+	input			output				input						output
+>>print("hi" ,end="**")  ::: hi****
+>>eval("5+2+3")            ::: 10
+
+
+
+
+
+
+
+
+
+
+BIG DATA
+*********
+
+*by default 3replica of data at every node in hadoop
+
+commands:
+hadoop fs -put my.txt  / : uploading a file into  / folder
+netstat -tnlp : to see all the busy network ports
+
+
+formation of cluster : master
+1)jps
+2)cd /etc/hadoop
+3)mkdir /master
+3)open the hdfs-site.xml and change the code
+ <configuration>
+<property>
+<name>dfs.name.dir</name>
+<value>/master</value>
+</property
+</configuration>
+4)hadoop namenode -format
+5)hadoop-daemon.sh start namenode
+6)hadoop dfsadmin -reports
+
+
+

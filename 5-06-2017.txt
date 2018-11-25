@@ -1,0 +1,45 @@
+LINUX
+
+Collection of file is known as ARCHIVE.
+Repository: the place where all the softwares are kept
+linux urls doesnt have spaces . to escaoe it use '\' 
+DHCP server : duty to give a dynamic ip to a computer.
+
+** if there is an output that command not  found then it means that command does not exist or there is not a particular software present for that command.
+
+shalsum [filename] : used to display a hash code of any file
+rpm-(redhat package manager) software extractor
+
+piping(|): joining two commands
+
+commands
+rpm -qf /usr/bin/firefox : q means query , f means file :: steps- 1) which [command]  2)rpm -qf [address]
+rpm -q -a : to find all the software names installd in the system.
+rpm -e firefox : to uninstall the firefox software
+rpm -q -l firefox : to find the list all the files at the repective location of a particuar software .
+rpm -q -l | less : used to display complete output page by page using pgup and pgdwn.
+rpm -i -v -h :to install software and display the progress :: v=verbose , h= hash. i =install.	
+man - man [command name] : used to find all the details about  a particular command.
+pwd - present working directory :used to find the location of the present directory
+ls |grep [filename] : search a particular file name from a list.
+fdisk -l : how much hard disk is in the system .
+ifconfig- to check the ip address andx check all the network cards connected in the system.
+
+
+
+
+
+
+
+
+
+yum - install the software together with the dependent software	:: for configuring the yum change directory to /etc/yum.repos.d/
+steps for yum software installation
+1)cd to /etc/yum.repos.d/
+2)open gedit qith prakhar.repo
+3)[my repo]
+  baseurl=file:///run/media/root/RHEL-7.3 Server.x86_64    (found using pwd command)
+  gpgcheck=0   (it means dont check the signature of software while installing or downloading.)
+4)save the file
+5)on terminal type yum repolist
+6)type yum install firefox

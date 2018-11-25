@@ -1,0 +1,67 @@
+***********LINUX :SERVER*****************************************
+
+*the folder in which a partition is mounted ,the folder is called mount point
+*the system which gives service is called server
+*port number 80 for http and  for https port number is 443
+
+
+
+
+commands :
+
+init 6 : to restart the system.
+ls -a : to show hiden files
+vim /proc/meminfo : opens a file having complete details about memory
+rpm -qi [software name]: to display complete details about a software. 
+
+
+
+**steps for permanent mounting a partition into folder
+1) vim /etc/fstab
+2)general format 
+  device  mountpoint   format   options  1   2
+3)
+
+
+
+***step for configuring a web server
+1. go do cd /var/www/html
+2)make an html file
+3. systemctl start httpd
+
+
+
+
+
+
+**********html*********************************************************
+
+*in radio buttons a variable is a variable but in checkbox a variable is an arrays
+
+
+
+
+TAGS :
+
+marquee : use to move text 
+
+
+
+
+
+
+
+
+
+
+******************bigdata**********************************
+
+*failover means if one node fails then it automatically connects to the second slave.
+
+commands:
+
+hadoop dfsadmin -safemode enter : to turn on safe mode
+hadoop dfsadmin -safemode leave : to turn of safe mode	
+
+
+**changing block size

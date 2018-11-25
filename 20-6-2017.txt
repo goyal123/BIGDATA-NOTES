@@ -1,0 +1,19 @@
+**************************linux:dockers*************************************
+
+*for nfs server software 
+1.needed is nfs-tils
+2.vim/etc/exports : folder name and ip dest
+
+******************docker*************************************
+
+
+docker stop $(docker ps - q):to stop all he running docker os
+
+docker rm [id] : to remove the os
+
+docker stop -f $(docker ps - q) : forceful removal of os
+
+docker commit web3 apacheimg:v2 :creating a new image 
+docker run -it --name [any name] centos:latest : to give any name to os
+
+docker save apacheimg:v2  -o mywebserver.tar : exporting the image to be shared

@@ -1,0 +1,58 @@
+LINUX
+
+
+there are 2 ways to assign ip address.
+1)manual 
+2)auto - dhcp(dynamic host control protocol) provides the ip address dynamically.
+
+
+**computer request first goes to dns server then dns server(also called name server provides the ip of the destination and theh the sytem connects with destination,
+**converting an ip address directly into decimal and this can be used to open  a site. : first octet*2^24+s.o*2^16+ t.o*2^8+fourth octet*2^0
+*mail server-smtp
+ file transfer server - ftp
+ name server - dns
+ auto ip assign server - dhcp
+ file/folder server - nfs
+ remote login server -ssh
+
+Steps for opening an app on other system
+1) $DISPLAY=:0
+2)firefox
+
+commands-
+
+dhclient - requesting a dhcp server to allocate an ip address which is available .
+nslookup www.google.com : to find ip address of google.com 
+whoami : to get the name of current user.
+echo $a : displaying the value of variable a
+DISPLAY : case sensitive command to assigning  a particular display by uing w command(for checking value of display)
+
+
+Configure server:
+--------------------------
+
+steps
+1)install software
+2)configure according to our requirement
+3)start their services(execute)
+
+
+
+Configuring our own web server:
+------------------------------
+steps
+1) Software httpd(rpm)
+2)configuration already done
+
+copy/deploy your website/web pages into the folder mentioned below.
+path : #cd /var/www/html/
+       #pwd
+3)execute (service start)
+       #ls
+       #gedit prakhar.html
+commands to start and stop the server
+systemctl start httpd : for starting the web service
+systemctl status httpd : checking current status if the server.
+systemctl stop firewalld : stop the firewall.
+
+ go to browser and write http://ipadress of cliet//file name   (by default index.html will open if no file is specified.)

@@ -1,0 +1,78 @@
+LINUX
+
+
+remote login server
+-------------------
+there are some protocols for connecting client to server, and data flows in an encrypted way:
+ 1)telnet :data goes in clear text adn it is not secure 
+ 2)ssh : data goes in encrypted form called as cypher text.
+ 3)rlogin
+
+*daemon - the background processes or service which runs in the background.
+
+
+
+commands:
+id: to check if user exists or not
+systemctl status sshd : to check if ssh is active or not.
+alias ping="ping -c 4"  : to make an alias of the rhs command with a differnt name.	
+echo $HOME : home is a variable that has the home address
+scp  192.168.43.205:/root/Desktop/my.txt   /root/Desktop  : downloading a file from another system
+scp -r  192.168.43.205:/root/Desktop/my.txt   /root/Desktop  : downloading a folder from another system
+                     SOURCE                  DESTINATION
+
+
+
+
+
+
+
+PYTHON
+******
+
+*to check the command has executed succesfully then the exit code is checked .if it is 0 then it is successful otherwise not successful
+it can be done using "$?"
+
+
+**steps for creating a python(.py) file.
+1)gedit filename.py
+2)start the file with  #!/usr/bin/python2
+3) in the end write raw_input()
+
+
+
+**if..else syntax
+[[  if [condition]:
+       print "ok"
+    else:
+        print "not ok"
+]]
+keywords:
+import [module name]: to import  Particular module name. for eg ... >>import os , os.system("date")  : it would display the date 
+system : to execute linux command in python.
+dir([module name]) : to display all the function of the module.
+raw_input : for taking the input from user
+
+
+
+
+modules
+-------
+[[commands ::commands.getoutput(), command.getstatusoutput : for using linux commands]]
+[[os ::os.system("date") : execute linux date command
+       os.system(tput setf 1-8) - changing font color.
+       os.system(tput setb 1-8) - changing background  color.
+
+
+
+
+
+
+
+BIGDATA
+*******
+*master(name node) : the system which distributes the data into parts.
+ slave(data node) : the systems which gives there storage for storing the parts of data.
+*some softwares for bigdata : hadoop , ciph
+*protocol used for telling  maaster that it has  slave's storage is called hdfs :hadoop distributed file system.
+gedit /root/bashrc
